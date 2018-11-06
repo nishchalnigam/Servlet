@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <title>Nishchal Nigam</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+</style>
+</head>
+<body>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page"><a href="index.html">About Me</a></li>
+    <li class="breadcrumb-item"><a href="placestovisit.html">Places I want to Visit</a></li>
+    <li class="breadcrumb-item"><a href="games.html">Hobbies & Interests</a></li>
+	<li class="breadcrumb-item"><a href="contact.html">Contact Me</a></li>
+  </ol>
+</nav> 
+<div style="float:left;margin-left:1em;">	
+        <canvas id="mCanvas" width="400" height="70"
+        style="border:1px solid #d3d3d3;">
+        Your browser does not support the canvas element.
+        </canvas>
+        <script>
+        var canvas = document.getElementById("mCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Georgia";
+        var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+        gradient.addColorStop("0","magenta");
+        gradient.addColorStop("0.5","blue");
+        gradient.addColorStop("1.0","red");
+        // Fill with gradient
+        ctx.fillStyle=gradient;
+        ctx.fillText("Contact Me",10,50);
+        </script>
+<table class="table table-bordered table-hover">
+	<tr>
+	<td><a href="https://www.linkedin.com/in/nishchalnigam/" target="_blank"><img style="height:10em;object-fit:contain;" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/2000px-Linkedin.svg.png" alt="LinkedIn"></a></td>
+	<td><a href="https://www.instagram.com/nishchilled/" target="_blank"><img style="height:10em;object-fit:contain;" " src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-png-transparent-background-800x799.png" alt="Insta"></a></td>
+	<td><a href="https://github.com/nishchalnigam" target="_blank"><img style="height:10em;object-fit:contain;" " src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Git"></a></td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
